@@ -14,15 +14,15 @@ def expandy(User_link):
     print(expan)
 
 #input from users
-while True:
-    User_link = input("Enter your link: ")
-    input_for_task = input("Type 's' for shortener you url OR 'e' expansion of shortened url : ").lower()
 
-    #for calling functions
+User_link = input("Enter your link: ")
+input_for_task = input("Type 's' for shortener you url OR 'e' expansion of shortened url : ").lower()
 
-    if input_for_task == "s":
-        shorty(User_link)
-    elif input_for_task == "e":
-        expandy(User_link)
+#for calling functions
+
+if input_for_task == "s":
+    shorty(User_link)
+elif input_for_task == "e":
+    expandy(User_link)
     
     
